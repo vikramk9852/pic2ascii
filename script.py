@@ -1,7 +1,6 @@
 import pyautogui
 import os
 from PIL import Image
-str = input()
 img = Image.open('D:\\checkk.jpg')#full image path
 width, height = img.size
 os.chdir('d:')
