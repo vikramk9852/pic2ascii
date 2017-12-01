@@ -1,9 +1,8 @@
-import pyautogui
 import os
 from PIL import Image
-img = Image.open('D:\\checkk.jpg')#full image path
 width, height = img.size
 os.chdir('d:')
+img = Image.open('checkk.jpg')
 first = open('two.html', 'w')
 first.write('<pre style="font: 10px/5px monospace;">')
 #change loop incrementer for expected width and height
