@@ -1,9 +1,9 @@
 import os
 from PIL import Image
-width, height = img.size
 os.chdir('d:')
 img = Image.open('checkk.jpg')
-first = open('two.html', 'w')
+width, height = img.size
+first = open('convert.html', 'w')
 first.write('<pre style="font: 10px/5px monospace;">')
 #change loop incrementer for expected width and height
 for i in range(0, height, 5):
