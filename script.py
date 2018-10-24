@@ -1,21 +1,38 @@
 from tkinter import *
 import os
 from PIL import Image
+from selenium import webdriver
+import time
+import urllib
+import urllib3
+
+
+x = 'file:///media/vikram/hdk/tesst/convert.html'
+driver = webdriver.Firefox()
+driver.get(x)
 
 #default values
 ls = [111, 119, 143, 162];
 
 def function1(val):
 	ls[0] = int(val)
+	convert()
+	driver.refresh()
 
 def function2(val):
 	ls[1] = int(val)
+	convert()
+	driver.refresh()
 
 def function3(val):
 	ls[2] = int(val)
+	convert()
+	driver.refresh()
 
 def function4(val):
 	ls[3] = int(val)
+	convert()
+	driver.refresh()
 
 def convert():
 	img = Image.open('check.jpg')
@@ -38,7 +55,6 @@ def convert():
 		first.write('\n')
 	first.write('</pre>')
 	first.close()
-	print(ls)
 
 root = Tk()
 root.title('pic2ascii')
